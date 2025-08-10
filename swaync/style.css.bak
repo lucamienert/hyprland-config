@@ -1,0 +1,48 @@
+* {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #ECEFF4;
+  background: transparent;
+}
+
+/* Base notification */
+.notification {
+  background-color: #2E3440;        /* Neutral dark background */
+  border: 1px solid #4C566A;        /* Subtle border */
+  border-radius: 8px;               /* Softer rounding */
+  padding: 16px 20px;               /* Compact padding */
+  margin: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Critical notification styling */
+.notification.critical {
+  border-color: #BF616A;
+}
+
+/* Control center panel */
+.control-center {
+  background-color: #3B4252;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Title: bolder and slightly larger */
+.notification-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #D8DEE9;
+  margin-bottom: 4px;
+}
+
+/* Body: normal text */
+.notification-body {
+  color: #ECEFF4;
+  font-size: 14px;
+}
+
+/* Timestamp or time display */
+.time {
+  color: #7D8895;
+  font-size: 12px;
+}
