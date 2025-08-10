@@ -1,0 +1,72 @@
+* {
+    font-family: Cantarell, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+window#waybar {
+    background: rgba(32, 33, 36, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#workspaces button {
+    padding: 4px 10px;
+    background: transparent;
+    border-radius: 6px;
+    margin: 0 4px;
+    transition: background 0.2s ease;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#workspaces button.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+#clock, #pulseaudio, #network, #battery, #tray, #custom-menu, #custom-wlogout, #custom-notifications, #custom-cpu, #custom-memory, #custom-disk, #custom-brightness, #custom-weather, #custom-user {
+    padding: 0 10px;
+    border-radius: 8px;
+    margin: 0 4px;
+}
+
+#clock {
+    font-weight: bolder;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .active {
+    -gtk-icon-effect: highlight;
+}
+
+#mode {
+  background: #64727d;
+  border-bottom: 3px solid white;
+}
+#custom-os_button {
+  font-size: 32px;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#custom-os_button:hover {
+  background: white;
+  color: black;
+}
+
+#custom-open_apps {
+    padding: 0 10px;
+    margin: 0 4px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+#custom-open_apps:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

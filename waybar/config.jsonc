@@ -1,0 +1,89 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "modules-left": [
+        "hyprland/workspaces", 
+        "custom/menu",
+        "custom/focused_app"
+    ],
+    "modules-center": ["clock"],
+    "modules-right": [
+        "custom/open_apps",
+        "custom/nightlight",
+        "custom/notifications", 
+        "pulseaudio", 
+        "network", 
+        "tray", 
+        "custom/wlogout"
+    ],
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "all-outputs": true,
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+    "custom/notifications": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "swaync-client -t",
+        "on-click-right": "swaync-client -d -a",
+        "return-type": "json",
+        "exec": "swaync-client -swb",
+        "interval": 1
+    },
+    "custom/wlogout": {
+        "format": " ",
+        "on-click": "wlogout --layout ~/.config/wlogout/layout --css ~/.config/wlogout/style.css",
+        "tooltip": false
+    },
+    "custom/focused_app": {
+        "format": "{}",
+        "exec": "~/.config/waybar/scripts/focused_app.sh",
+        "return-type": "text",
+        "interval": 1,
+        "tooltip": false
+    },
+    "custom/menu": {
+        "format": "",
+        "on-click": "wofi --show drun -I",
+        "tooltip": false
+    },
+    "clock": {
+        "format": "{:%d %b %Y  %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "Muted {icon}",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "Ethernet ",
+        "format-disconnected": "Disconnected ⚠",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+    "custom/nightlight": {
+        "format": "",
+        "tooltip": "Toggle Night Light",
+        "on-click": "~/.config/waybar/scripts/toggle-nightlight.sh"
+    },
+    "custom/open_apps": {
+        "format": "",
+        "on-click": "~/.config/waybar/scripts/open_apps_dropdown.sh",
+        "tooltip": false
+    }
+}
