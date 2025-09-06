@@ -1,9 +1,0 @@
-{
-  "position": "top-right",
-  "layer": "overlay",
-  "control-center-layer": "top",
-  "timeout": 300,
-  "transition-time": 200,
-  "hide-on-clear": true,
-  "keyboard-shortcuts": true
-}
