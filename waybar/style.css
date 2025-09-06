@@ -1,6 +1,6 @@
 * {
-    font-family: Cantarell, sans-serif;
-    font-size: 14px;
+    font-family: "Cantarell", "JetBrains Mono", "Font Awesome 6 Free", monospace;
+    font-size: 15px;
     color: #ffffff;
     transition: all 0.3s ease-in-out;
 }
@@ -51,10 +51,12 @@ window#waybar {
   background: #64727d;
   border-bottom: 3px solid white;
 }
+
 #custom-os_button {
   font-size: 32px;
   transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 #custom-os_button:hover {
   background: white;
   color: black;
@@ -65,6 +67,8 @@ window#waybar {
     margin: 0 4px;
     border-radius: 8px;
     background: transparent;
+    font-size: 15px;
+
 }
 
 #custom-open_apps:hover {

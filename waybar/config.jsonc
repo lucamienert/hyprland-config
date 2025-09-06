@@ -1,15 +1,16 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 32,
+    "height": 40,
     "margin-top": 0,
     "margin-bottom": 0,
     "margin-left": 0,
     "margin-right": 0,
+
     "modules-left": [
         "hyprland/workspaces", 
         "custom/menu",
-        "custom/focused_app"
+        "hyprland/window"
     ],
     "modules-center": ["clock"],
     "modules-right": [
@@ -26,6 +27,16 @@
         "all-outputs": true,
         "persistent-workspaces": {
             "*": 5
+        }
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true,
+        "max-length": 50,
+        "rewrite": {
+            "(.*) — Mozilla Firefox": "🌐 Firefox",
+            "(.*) - Visual Studio Code": "💻 Code",
+            "(.*) - Spotify": "🎵 Spotify"
         }
     },
     "custom/notifications": {
@@ -68,7 +79,7 @@
     },
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "Ethernet ",
+        "format-ethernet": "Connected ",
         "format-disconnected": "Disconnected ⚠",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
     },

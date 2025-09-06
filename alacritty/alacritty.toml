@@ -1,31 +1,42 @@
 [general]
-import = [
-  "~/.config/alacritty/catppuccin-mocha.toml"
-]
-
-[env]
-TERM = "xterm-256color"
-
-
-[font]
-size = 14.0
-
-[font.bold]
-family = "JetBrains Mono"
-style = "Bold"
-
-[font.bold_italic]
-family = "JetBrains Mono"
-style = "Bold Italic"
-
-[font.italic]
-family = "JetBrains Mono"
-style = "Italic"
-
-[font.normal]
-family = "JetBrains Mono"
-style = "Regular"
 
 [window]
-opacity = 0.3
+opacity = 0.9
 
+[font]
+normal = { family = "JetBrains Mono", style = "Regular" }
+bold = { family = "JetBrains Mono", style = "Bold" }
+italic = { family = "JetBrains Mono", style = "Italic" }
+size = 16.0
+
+[colors.primary]
+background = "#0f111a"
+foreground = "#cdd6f4"
+
+[colors.cursor]
+text = "#0f111a"
+cursor = "#f5e0dc"
+
+[colors.normal]
+black   = "#0f111a"
+red     = "#f38ba8"
+green   = "#a6e3a1"
+yellow  = "#f9e2af"
+blue    = "#89b4fa"
+magenta = "#f5c2e7"
+cyan    = "#94e2d5"
+white   = "#bac2de"
+
+[colors.bright]
+black   = "#1a1b26"
+red     = "#f38ba8"
+green   = "#a6e3a1"
+yellow  = "#f9e2af"
+blue    = "#89b4fa"
+magenta = "#f5c2e7"
+cyan    = "#94e2d5"
+white   = "#a6adc8"
+
+[colors.selection]
+text = "#0f111a"
+background = "#3b4252"
